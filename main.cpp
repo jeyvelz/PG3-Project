@@ -1,7 +1,10 @@
 #include <stdio.h>
+#include <Windows.h>
 
 int main() {
-	printf("Hello World");
+	SetConsoleOutputCP(65001);
+	char str[] = "ソ";
+	printf("%s",str);
 
 	return 0;
 }
