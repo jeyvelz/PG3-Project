@@ -10,7 +10,7 @@ public:
 		
 private:
 	//現在状態
-	int currentState = 0;
+	int currentState_ = 0;
 
 	//接近
 	void (Approach)();

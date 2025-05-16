@@ -21,7 +21,7 @@ void(Enemy::Withdraw)(){
 }
 
 void Enemy::Update() {
-	(this->*EnemyTransition[currentState])();
-
-	currentState = (currentState + 1) % 3;
+	(this->*EnemyTransition[static_cast<size_t>(currentState_)])();
+	//状態は３種まであるので制限する
+	currentState_ = (currentState_ + 1) % 3;
 }
