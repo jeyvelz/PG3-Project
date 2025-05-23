@@ -3,9 +3,11 @@
 #include "Dog.h"
 
 int main() {
+	//基底クラスでまとめる
 	Animal* animal[3];
 
 	for (int i = 0; i < 2; i++) {
+		//派生クラスでインスタンスを生成する
 		if (i < 1) {
 			animal[i] = new Cat;
 		} else {
